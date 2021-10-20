@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sum and Average</title>
+</head>
+<body>
+	<hr>
+	<header><h1 align="center">Program to find Sum and Average</h1></header>
+	<hr><hr>
+
+	<nav>
+		<a href="#problem">Problem Statement</a> |
+		<a href="#code">Code</a> |
+		<a href="#input">Sample Input</a> |
+		<a href="#output">Sample Output</a> |
+		<a href="#variables">Variables Used</a> |
+		<a href="#complexity">Complexity</a>
+	</nav>
+	<hr>
+	<article>
+		
+
+	<section>
+		<a name="problem"></a>
+		<h2>Problem Statement:</h2>
+		<p> Write a program in any language to read 10 numbers from keyboard and find their sum and average.</p>
+		<hr>
+	</section>
+
+	<section>
+		<a name="code"></a>
+		<h3>Code</h3>	
+		<pre>
+		<code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+	cout << "Sum And Average Calculator\n" << endl;
+
+	int total_numbers = 10;
+	int sum = 0;
+	float average = 0;
+
+	int numbers[10];
+
+	for(int i = 0; i < total_numbers; i++){
+		cout << "Enter Number " << i+1 << ": ";
+		cin >> numbers[i];
+	}
+
+	for(int i = 0; i < total_numbers; i++){
+		sum += numbers[i];
+	}
+
+	average = sum/total_numbers;
+
+	cout << "\nThe sum of the numbers is " << sum << endl;
+	cout << "\nThe average of the numbers is " << average << endl;
+
+	return 0;
+}
+		</code>
+		</pre>
+	<hr>
+	</section>
+
+	<section>
+		<a name="input"></a>
+			<h3>Sample Input</h3>
+		<pre>
+		<kbd>
+Enter number 1: 10
+Enter number 2: 20
+Enter number 3: 30
+Enter number 4: 40
+Enter number 5: 50
+Enter number 6: 60
+Enter number 7: 70
+Enter number 8: 80
+Enter number 9: 90
+Enter number 10: 100
+		</kbd>
+	</pre>		
+	</section>
+	<hr>
+
+	<section>
+		<a name="output"></a>
+		<h3>Sample Outupt</h3>
+		<pre>
+		<var>
+The sum of the numbers is 550
+
+The average of the numbers is 55
+		</var>
+	</pre>
+	<hr>
+	</section>
+
+	<section>
+		<a name="variables"></a>
+		<h4>Variables used in the Program</h4>
+		<h5>Integer Variables</h5>
+
+		
+		<p><s>totalNumber</s> total_number, sum, i</p>
+		<h5>Float Variables</h5>
+		<p>average</p>
+		<hr>
+	</section>
+
+	<section>
+		<a name="complexity"></a>
+		<h3>Complexity</h3>
+		<h4>Time Complexity:</h6>
+		<small>
+		<p>The program runs in linear time. Therefore, the time complexity is : <b>O</b>(n)
+		</p></small>
+		<h4>Space Complexity:</h4>
+		<small>
+		<p>The program uses space equivalent to total numbers required to be computed. Hence the space complexity is : <b>O</b>(n)</p>
+		</small>
+	</section>
+	</article>
+
+</body>
+</html>
